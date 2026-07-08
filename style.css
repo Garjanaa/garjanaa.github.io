@@ -1,0 +1,175 @@
+/* === RESET & BASE === */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:18px}
+body{
+  font-family:'Lora','Georgia',serif;
+  color:#2b2b2b;
+  background:#fdfaf4;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased
+}
+
+/* === TYPOGRAPHY === */
+h1,h2,h3,.nav-mark,.sec-h2,.hero-h1,.hero-tag{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:400;
+  color:#3a2c1c
+}
+h1{font-size:clamp(2.5rem,6vw,4.5rem)}
+h2{font-size:clamp(2rem,4vw,3rem)}
+h3{font-size:1.6rem}
+a{text-decoration:none;color:inherit}
+em{font-style:italic;color:#b8860b}
+
+/* === VARIABLES === */
+:root{
+  --gold:#b8860b;
+  --gold-dim:#d4af37;
+  --deep:#2e241a;
+  --surface:#fdfaf4;
+  --cream:#f7f2e6;
+}
+
+/* === NAV === */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1.2rem 2rem;
+  background:var(--deep);
+  color:var(--cream);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.nav-mark{
+  font-size:1.8rem;
+  letter-spacing:1px;
+  color:var(--gold-dim);
+  font-weight:600;
+}
+.nav-links{display:flex;list-style:none;gap:2rem}
+.nav-links a{font-size:1rem;letter-spacing:0.5px;color:var(--cream);transition:color .2s}
+.nav-links a:hover,.nav-links a.current{color:var(--gold-dim);border-bottom:1px solid var(--gold-dim)}
+
+/* === HERO === */
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(180deg, #2e241a 0%, #3e3020 100%);
+  color:#fdfaf4;
+  text-align:center;
+  position:relative;
+  padding:2rem
+}
+.hero-content{margin-top:4rem}
+.hero-deva{
+  font-size:clamp(3rem,10vw,7rem);
+  color:var(--gold-dim);
+  opacity:0.5;
+  display:block;
+  line-height:1
+}
+.hero-h1{
+  font-size:clamp(4rem,12vw,8rem);
+  letter-spacing:6px;
+  color:#fdfaf4;
+  margin:0.5rem 0
+}
+.hero-h1 .g{color:var(--gold-dim)}
+.hero-tag{
+  max-width:600px;
+  margin:1.5rem auto 2.5rem;
+  font-size:1.2rem;
+  color:#ddd5c8;
+}
+.hero-cta{
+  display:inline-block;
+  padding:0.8rem 2rem;
+  border:1px solid var(--gold-dim);
+  color:var(--gold-dim);
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.2rem;
+  letter-spacing:2px;
+  transition:background .3s,color .3s;
+}
+.hero-cta:hover{background:var(--gold-dim);color:#2e241a}
+.hero-scroll{position:absolute;bottom:2rem;opacity:0.4;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase}
+.lamp-wrap{display:none}
+
+/* === SECTIONS === */
+.sec{padding:5rem 2rem}
+.sec--surface{background:var(--surface)}
+.sec--deep{background:var(--cream)}
+.inner{max-width:800px;margin:0 auto}
+.inner--wide{max-width:1200px;margin:0 auto;padding:0 2rem}
+.eyebrow{font-size:0.8rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem}
+.sec-h2{font-size:2.6rem;margin-bottom:1rem}
+.rule{width:60px;height:2px;background:var(--gold-dim);margin:1.5rem 0}
+.body-p{margin-bottom:1.5rem;font-size:1.05rem;color:#444}
+.muted{color:#777;font-size:0.95rem}
+.sec-intro{max-width:700px;margin:0 auto 3rem;text-align:center;font-size:1.15rem}
+.pull{margin:3rem 0;padding-left:2rem;border-left:3px solid var(--gold-dim)}
+.pull blockquote{font-size:1.5rem;font-style:italic;color:var(--deep);line-height:1.5}
+.pull cite{display:block;margin-top:1rem;font-size:0.9rem;color:#888;font-style:normal}
+
+/* === CARDS === */
+.sec-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-top:2rem}
+.sec-card{
+  background:#fff;
+  padding:2rem;
+  border-radius:4px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.04);
+  transition:transform .2s,box-shadow .2s;
+  display:flex;flex-direction:column;
+}
+.sec-card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,0.08)}
+.sc-ey{font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem}
+.sc-title{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:0.8rem;color:var(--deep)}
+.sc-desc{color:#555;flex:1;margin-bottom:1.5rem}
+.sc-link{font-size:0.9rem;color:var(--gold);border-bottom:1px dotted var(--gold-dim)}
+
+/* === NOT GRID === */
+.not-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2rem}
+.not-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;margin-bottom:0.5rem;color:var(--deep)}
+.not-desc{color:#555}
+
+/* === CLOSING === */
+.closing-q{font-size:1.4rem;color:var(--deep);font-style:italic;margin-bottom:2.5rem;line-height:1.5}
+
+/* === FOOTER === */
+footer{
+  background:var(--deep);
+  color:var(--cream);
+  text-align:center;
+  padding:4rem 2rem;
+  font-size:0.9rem;
+}
+.ft-lamp{width:40px;height:40px;margin:0 auto 1.5rem;background:var(--gold-dim);border-radius:50%;opacity:0.3}
+.ft-mark{font-family:'Cormorant Garamond',serif;font-size:2.5rem;letter-spacing:2px;color:var(--gold-dim)}
+.ft-deva{font-size:3rem;opacity:0.2;margin-bottom:0.5rem}
+.ft-tag{font-size:1rem;color:#bbb;margin-bottom:2rem}
+.ft-quote{max-width:500px;margin:0 auto 2.5rem;font-style:italic;color:#aaa}
+.ft-nav{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.ft-nav a{color:var(--cream);transition:color .2s}
+.ft-nav a:hover{color:var(--gold-dim)}
+
+/* === RESPONSIVE === */
+@media(max-width:768px){
+  .nav{flex-direction:column;gap:0.5rem}
+  .nav-links{gap:1rem}
+  .sec{padding:3rem 1.2rem}
+  .not-grid{grid-template-columns:1fr}
+}
+
+/* === GENERAL PAGE STYLE (philosophy, practices, etc) === */
+.page-section{padding:4rem 2rem}
+.page-inner{max-width:800px;margin:0 auto}
+.page-inner h2{margin-top:3rem;margin-bottom:1rem}
+.page-inner h3{margin-top:2rem;margin-bottom:0.8rem}
+.page-inner p{margin-bottom:1.3rem;color:#444}
+.page-inner ul, .page-inner ol{margin-bottom:1.5rem;padding-left:1.5rem}
+.page-inner li{margin-bottom:0.5rem}
