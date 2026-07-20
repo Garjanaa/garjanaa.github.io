@@ -612,3 +612,67 @@ footer .footer-cta:hover {
   transition: all 0.8s ease;
 }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
+/* What Is Garjanaa Section */
+.what-is {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.what-is-content p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--stone);
+  margin-bottom: 1.5rem;
+}
+
+.what-is-content strong {
+  color: var(--cream);
+}
+
+/* Ritual Content Styling */
+.ritual-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.ritual-verse {
+  border-left: 3px solid var(--flame);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: var(--stone);
+  font-style: italic;
+}
+
+.ritual-verse p {
+  margin-bottom: 1rem;
+}
+
+.ritual-content h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  color: var(--cream);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ritual-source {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--stone-dim);
+  margin-top: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Ensure links don't force new tab behavior */
+a {
+  target: none;
+}
