@@ -5,72 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Garjanaa Document: Vidya, Yoga, Kriya, Charya</title>
   <meta name="description" content="The complete Garjanaa Document: philosophy, yoga, practice, and conduct in one comprehensive reference text grounded in Advaita Vedanta, Aanvikshiki, simplified Agama, and unconditional Seva.">
+  <link rel="canonical" href="https://garjanaa.github.io/garjanaa-document.html">
+  <meta property="og:title" content="The Garjanaa Document: Vidya, Yoga, Kriya, Charya">
+  <meta property="og:description" content="The complete Garjanaa Document: philosophy, yoga, practice, and conduct in one comprehensive reference text.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://garjanaa.github.io/garjanaa-document.html">
+  <meta property="og:image" content="https://garjanaa.github.io/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-:root{--gold:#b8860b;--gold-dim:#d4af37;--deep:#2e241a;--surface:#fdfaf4;--cream:#f7f2e6}
-.doc-hero{background:linear-gradient(175deg,#2e241a 0%,#3e3020 60%,#4a3a28 100%);color:#fdfaf4;padding:5rem 2rem 3.5rem;text-align:center}
-.doc-hero .ey{font-size:.78rem;letter-spacing:4px;text-transform:uppercase;color:#b8860b;display:block;margin-bottom:1rem}
-.doc-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,8vw,5rem);font-weight:400;color:#fdfaf4;letter-spacing:4px;margin-bottom:.6rem}
-.doc-hero h1 em{color:#d4af37;font-style:normal}
-.doc-hero .hsub{font-family:'Lora',serif;font-size:1rem;color:#ddd5c8;max-width:620px;margin:.8rem auto 0;font-style:italic;line-height:1.65}
-.toc-band{background:#f7f2e6;border-top:2px solid #d4af37;border-bottom:1px solid #e8d98a;padding:2.5rem 2rem}
-.toc-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.8rem}
-.toc-part h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:#b8860b;margin-bottom:.5rem;font-weight:500;text-transform:uppercase;letter-spacing:1px}
-.toc-part ul{list-style:none;padding:0}
-.toc-part li{margin-bottom:.2rem}
-.toc-part a{font-family:'Lora',serif;font-size:.82rem;color:#555;text-decoration:none;border-bottom:1px dotted #c9a84c}
-.toc-part a:hover{color:#b8860b}
-.doc-body{max-width:840px;margin:0 auto;padding:4rem 2rem 6rem}
-.doc-body h1.part-h{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--gold-dim);margin:0;font-weight:400;text-transform:uppercase;letter-spacing:3px}
-.doc-body h2{font-family:'Cormorant Garamond',serif;font-size:1.85rem;color:#3a2c1c;margin:3.5rem 0 .8rem;padding-bottom:.35rem;border-bottom:1px solid #d4c080}
-.doc-body h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--gold);margin:2.2rem 0 .6rem}
-.doc-body h4{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#3a2c1c;margin:1.6rem 0 .35rem;text-transform:uppercase;letter-spacing:1px}
-.doc-body p{margin-bottom:1.3rem;color:#444;line-height:1.75;font-family:'Lora',serif;font-size:1rem}
-.doc-body ul,.doc-body ol{margin-bottom:1.5rem;padding-left:1.5rem}
-.doc-body li{margin-bottom:.45rem;color:#444;line-height:1.65;font-family:'Lora',serif;font-size:1rem}
-.doc-body blockquote{margin:1.5rem 0 1.5rem 1rem;padding:1rem 1.5rem;border-left:3px solid var(--gold-dim);background:var(--cream);font-style:italic;color:#555}
-.doc-body hr{border:none;border-top:1px solid var(--gold-dim);opacity:.3;margin:2.5rem 0}
-.doc-body strong{color:#2b2b2b}
-.doc-body em{color:#b8860b;font-style:italic}
-.doc-body code{font-family:'Lora',serif;font-style:italic;color:#b8860b;background:none}
-.doc-body table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.88rem}
-.doc-body th{background:var(--cream);padding:.6rem .8rem;text-align:left;border-bottom:2px solid var(--gold-dim);font-family:'Cormorant Garamond',serif;font-size:.95rem;color:#3a2c1c}
-.doc-body td{padding:.55rem .8rem;border-bottom:1px solid #e8e0d0;vertical-align:top;color:#444;font-family:'Lora',serif}
-.part-banner{background:var(--deep);color:var(--gold-dim);padding:4rem 2rem 3rem;margin:5rem -2rem 0;text-align:center;position:relative}
-.part-banner::after{content:'';display:block;height:3px;background:linear-gradient(to right,transparent,#d4af37,transparent);margin-top:3rem}
-.part-banner .pnum{font-size:.78rem;letter-spacing:5px;text-transform:uppercase;color:#b8860b;display:block;margin-bottom:.6rem;font-family:'Lora',serif}
-.part-banner .pname{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.2rem);letter-spacing:3px;display:block;margin-bottom:.5rem}
-.part-banner .pdesc{font-size:.95rem;color:#aaa;font-family:'Lora',serif;font-style:italic;max-width:520px;margin:.6rem auto 0;line-height:1.65}
-.smriti-note{background:var(--cream);border-left:3px solid var(--gold-dim);padding:1rem 1.5rem;margin:2rem 0;font-family:'Lora',serif;font-size:.88rem;color:#666;font-style:italic}
-@media(max-width:768px){.doc-body{padding:2rem 1.2rem}.toc-inner{grid-template-columns:1fr 1fr}.part-banner{margin:4rem -1.2rem 0}}
-@media(max-width:480px){.toc-inner{grid-template-columns:1fr}}
-</style>
 </head>
 <body>
-<nav class="nav">
-  <a href="index.html" class="nav-mark">Garjanaa</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="philosophy.html">Philosophy</a></li>
-    <li><a href="practices.html">Practices</a></li>
-    <li><a href="texts.html">Texts</a></li>
-    <li><a href="garjanaa-document.html" class="current">The Document</a></li>
-  </ul>
+<nav id="navbar">
+<div class="nav-inner">
+<a href="index.html" class="nav-logo">GARJANAA</a>
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="philosophy.html">Philosophy</a></li>
+<li><a href="practices.html">Practices</a></li>
+<li><a href="texts.html">Texts</a></li>
+<li><a href="community.html">Community</a></li>
+<li><a href="gurus.html">24 Gurus</a></li>
+<li><a href="chakras.html">Chakras</a></li>
+<li><a href="parables.html">Parables</a></li>
+<li class="nav-dropdown open">
+<button class="dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">Library</button>
+<ul class="dropdown-menu">
+<li><a href="advait.html">Advaita Guide</a></li>
+<li><a href="garjanaa-document.html" class="current">Complete Document</a></li>
+<li><a href="ladder.html">The Ladder</a></li>
+<li><a href="codes-of-conduct.html">Code of Conduct</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </nav>
+<div class="nav-overlay"></div>
 
 <div class="doc-hero">
-  <span class="ey">The Complete Garjanaa Document</span>
+  <span class="eyebrow">The Complete Garjanaa Document</span>
   <h1>Vidya, Yoga, <em>Kriya</em>, Charya</h1>
-  <p class="hsub">The full philosophy, practice framework, devotional structure, and community code of the Garjanaa circle in one reference text. Grounded in Advaita Vedanta. Guided by Aanvikshiki. Expressed through simplified Agamic devotion. Lived as unconditional Seva.</p>
-  <a href="texts.html" style="display:inline-block;margin-top:1.5rem;padding:.5rem 1.5rem;border:1px solid #d4af37;color:#d4af37;font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:2px;">Back to Texts</a>
+  <p class="doc-sub">The full philosophy, practice framework, devotional structure, and community code of the Garjanaa circle in one reference text. Grounded in Advaita Vedanta. Guided by Aanvikshiki. Expressed through simplified Agamic devotion. Lived as unconditional Seva.</p>
 </div>
 
-<div class="toc-band">
-<div class="toc-inner">
-  <div class="toc-part">
+<div class="doc-toc">
+<div class="doc-toc-inner">
+  <div class="doc-toc-part">
     <h3>Vidya Khanda</h3>
     <ul>
       <li><a href="#soteriology">Soteriology</a></li>
@@ -81,7 +65,7 @@
       <li><a href="#upayas">The Four Upayas</a></li>
     </ul>
   </div>
-  <div class="toc-part">
+  <div class="doc-toc-part">
     <h3>Yoga Khanda</h3>
     <ul>
       <li><a href="#four-yogas">The Four Yogas</a></li>
@@ -93,7 +77,7 @@
       <li><a href="#ch26">Jivanmukti</a></li>
     </ul>
   </div>
-  <div class="toc-part">
+  <div class="doc-toc-part">
     <h3>Kriya Khanda</h3>
     <ul>
       <li><a href="#daily-framework">Daily Practice Framework</a></li>
@@ -103,7 +87,7 @@
       <li><a href="#smriti-kriya">Practices in Detail</a></li>
     </ul>
   </div>
-  <div class="toc-part">
+  <div class="doc-toc-part">
     <h3>Charya Khanda</h3>
     <ul>
       <li><a href="#rituals">Rituals and Rites</a></li>
@@ -124,16 +108,13 @@
 <p>The complete Garjanaa Document: the full philosophy, practice framework, devotional structure, and community code of this circle in a single reference text. It is organized into four Khandas following the classical structure of Vidya (knowledge), Yoga (union), Kriya (practice), and Charya (conduct).</p>
 <p>Each Khanda addresses different questions but arises from the same recognition: consciousness is not divided, the world is the field of its expression, and a human life can be organized around this recognition through understanding, practice, service, and right conduct simultaneously. The Vidya Khanda provides the philosophical ground. The Yoga Khanda describes the inner work of transformation. The Kriya Khanda gives the inner work a concrete daily form. The Charya Khanda ensures the inner work is expressed honestly in the outer life shared with others.</p>
 <p>This document integrates two bodies of material: the complete Advaita Vedanta guide (thirty-five chapters on philosophy and practice) and the Garjanaa Smriti (the community's own codes of knowledge, yoga, practice, and conduct). Nothing from either source has been omitted. The new sections on soteriology, axiology, the four upayas, advanced yogic concepts, and the Circles as adaptations of the Mahanirvana Tantra have been added to provide the structure the user of this document needs to understand how the pieces fit together.</p>
-<div class="smriti-note">Note on sources: Sections marked as drawn from the Garjanaa Smriti preserve the Smriti's distinctive voice and organizational logic. Sections drawn from the Advaita Vedanta guide preserve that text's careful philosophical precision. New sections written for this combined document are integrated to bridge the two bodies of material without replacing either.</div>
+<div class="doc-smriti-note">Note on sources: Sections marked as drawn from the Garjanaa Smriti preserve the Smriti's distinctive voice and organizational logic. Sections drawn from the Advaita Vedanta guide preserve that text's careful philosophical precision. New sections written for this combined document are integrated to bridge the two bodies of material without replacing either.</div>
 
-<div class="part-banner">
+<div class="doc-part-banner" id="vidya-intro">
   <span class="pnum">Part One of Four</span>
   <span class="pname">VIDYA KHANDA</span>
   <p class="pdesc">Knowledge: soteriology, axiology, epistemology, ontology, and the five symbolic forms of Brahman.</p>
 </div>
-
-<h1 class="part-h" id="vidya-intro">VIDYA KHANDA</h1>
-
 
 <h2 id="soteriology">1.1 Soteriology: Bondage, Liberation, and the Path Between Them</h2>
 <p>Soteriology is the study of liberation: what it means to be bound, what it means to be free, and how the transition from one to the other is possible. Vedanta's soteriology is distinctive. It does not describe a journey from one place to another, a process of acquiring something absent, or a reward earned through sufficient merit. It describes the removal of a mistake.</p>
@@ -180,9 +161,9 @@
 
 
 <h2 id="epistemology">1.3 Epistemology: Aanvikshiki, Nyaya, and Vaisheshika</h2>
-<div class="smriti-note">This section draws on the Nyaya chapter added to the Garjanaa Advaita Guide and on the Smriti's Book One treatment of the Threefold Test.</div>
+<div class="doc-smriti-note">This section draws on the Nyaya chapter added to the Garjanaa Advaita Guide and on the Smriti's Book One treatment of the Threefold Test.</div>
 
-<h1>BOOK ONE, VIDYĀ KHAṆḌA</h1>
+<h2>BOOK ONE, VIDYĀ KHAṆḌA</h2>
 <h2>A Note on Aanvikshiki and Nyaya-Vaisheshika</h2>
 <p>Garjanaa applies the Nyaya-Vaisheshika epistemological framework to all empirical claims. The four pramanas of Nyaya, direct perception, sound inference, analogy, and reliable testimony from competent authority, govern how the community evaluates factual claims about the world. The scientific method is the modern expression of the first two pramanas applied systematically. Critical thinking, the structured examination of arguments for validity and soundness, is the modern expression of the Nyaya syllogism and the hetvabhasa (fallacy) catalog. No empirical claim is accepted on authority alone. Every claim in the domain where evidence and reason apply is subject to this standard, including claims made by teachers, founders, and elders within the community.</p>
 <p>This does not apply to the paramarthika (ultimate) domain. The question of the nature of consciousness itself, the identity of Atman and Brahman, is addressed through Advaita Vedanta's method of shravana, manana, and nididhyasana, not through empirical measurement. The two domains use different tools for good reason: the tools appropriate to the empirical level cannot reach the ultimate level, and the tools appropriate to the ultimate level do not replace the need for empirical rigor in the conventional world.</p>
@@ -313,7 +294,7 @@
 
 <h2 id="ontology">1.4 Ontology: The Complete Account of Advaita Vedanta</h2>
 <p>The following thirty-five chapters constitute the complete Advaita Vedanta guide as incorporated into this document. They are the intellectual core of the Vidya Khanda and the foundation on which the Yoga, Kriya, and Charya sections rest. Read them as instructions for investigating one's own present experience, not as conclusions to be accepted.</p>
-<h1 id="top">ADVAITA VEDANTA</h1>
+<h2 id="top">ADVAITA VEDANTA</h2>
 <h3>The Wisdom of Non-Duality, a Clear and Practical Guide</h3>
 <p><em>Drawing on Tripura Rahasya, Yoga Vasishtha, Upadesha Sahasri, Tattvabodha, Atmabodha,
 Shankara's Gita-bhashya, Anandagiri, Madhusudana Saraswati, Khandana-khadya of Shri Harsha,
@@ -1140,13 +1121,11 @@ Self-inquiry is aimed with laser precision directly at this function.</p>
 <tr><td><strong>Devi / Shakti</strong></td><td>Dynamic creative power; Maya as Divine Mother who both veils and reveals</td><td>Durga removes what blocks; Lakshmi establishes right relationship; Saraswati flows as wisdom</td><td>Om Aim Hreem Kleem</td></tr>
 </table>
 
-<div class="part-banner">
+<div class="doc-part-banner" id="yoga-intro">
   <span class="pnum">Part Two of Four</span>
   <span class="pname">YOGA KHANDA</span>
   <p class="pdesc">Union: the four yogas, the four upayas, the qualifications and stages of the path, advanced concepts, self-inquiry, and liberation while living.</p>
 </div>
-
-<h1 class="part-h" id="yoga-intro">YOGA KHANDA</h1>
 
 <h2 id="four-yogas">The Four Yogas: Four Approaches to the Same Recognition</h2>
 <p>The four yogas are not four separate paths leading to four different destinations. They are four angles of approach to the same recognition, each engaging a different predominant faculty of the human being: intellect, heart, will-in-action, and the collected, disciplined attention. Most practitioners naturally emphasize one or two while drawing on all four. The tradition consistently affirms that followed sincerely and completely, each path arrives at the identical recognition.</p>
@@ -1216,8 +1195,8 @@ Self-inquiry is aimed with laser precision directly at this function.</p>
 </table>
 
 
-<div class="smriti-note">The following from the Garjanaa Smriti's Book Two expands the treatment of bhakti in its Advaitic flavor, the four yogas as one movement, and the values that mark the path.</div>
-<h1>BOOK TWO, YOGA KHAṆḌA</h1>
+<div class="doc-smriti-note">The following from the Garjanaa Smriti's Book Two expands the treatment of bhakti in its Advaitic flavor, the four yogas as one movement, and the values that mark the path.</div>
+<h2>BOOK TWO, YOGA KHAṆḌA</h2>
 <h2>Bhakti in Advaitic Flavor</h2>
 <p>Bhakti is not a lesser practice for those who cannot manage jnana. It is a complete path that arrives at the identical recognition. Ramakrishna, Mirabai, Andal, Tukaram, and Chaitanya arrived at non-dual recognition through the most intense personal devotion. In each case the devotee and the Beloved were found to be not two.</p>
 <p>The Advaitic understanding of bhakti: love is the felt dimension of non-dual recognition. The devotee who surrenders completely, holding nothing back, finds that the one who was surrendering dissolves into what was being surrendered to. The drop becomes the ocean and discovers it was always the ocean, seen from a limited angle.</p>
@@ -1936,13 +1915,11 @@ it removes the <em>false identification</em> of the changeless Self
 with that mechanism's experiences.
 Both statements are simultaneously, correctly true, each at its own appropriate level.</p>
 
-<div class="part-banner">
+<div class="doc-part-banner" id="kriya-intro">
   <span class="pnum">Part Three of Four</span>
   <span class="pname">KRIYA KHANDA</span>
   <p class="pdesc">Practice: the daily practice framework, seva, the Garjanaa circles, detailed practice instructions from the Smriti.</p>
 </div>
-
-<h1 class="part-h" id="kriya-intro">KRIYA KHANDA</h1>
 
 <h2 id="daily-framework">3.1 The Daily Practice Framework</h2>
 <h2 id="ch31">Chapter 31: A Daily Practice Framework</h2>
@@ -2087,8 +2064,8 @@ operating at the level of one's fundamental relationship to experience itself.</
 
 
 <h2 id="smriti-kriya">3.4 The Ten Practices in Detail</h2>
-<div class="smriti-note">The following from the Garjanaa Smriti's Book Three provides the complete detailed instructions for all ten practices, the mantras table, and guidance on how the practices fit together.</div>
-<h1>BOOK THREE, KRIYĀ KHAṆḌA</h1>
+<div class="doc-smriti-note">The following from the Garjanaa Smriti's Book Three provides the complete detailed instructions for all ten practices, the mantras table, and guidance on how the practices fit together.</div>
+<h2>BOOK THREE, KRIYĀ KHAṆḌA</h2>
 <h3>The Part on Practice</h3>
 <p><em>"The body must be settled before the breath can be refined. The breath must be steadied before the mind can hold a mantra. The mind quieted by mantra is ready for self-inquiry. Inquiry deepens into silence. Silence must be fed by study. Study finds its test in community. Community finds its expression in service. All of this is only real if it holds in the actual encounters of ordinary life."</em></p>
 <h2>3.0 Overview of the Ten Practices</h2>
@@ -2395,13 +2372,11 @@ operating at the level of one's fundamental relationship to experience itself.</
 <h2>The path is long. It demands genuine engagement, honest self-assessment, and the willingness to continue even when, especially when, the results are not immediate or visible. The tradition's unanimous teaching: the practice itself transforms the practitioner, whether or not the practitioner can see the transformation happening. Stay the course.</h2>
 <hr />
 
-<div class="part-banner">
+<div class="doc-part-banner" id="charya-intro">
   <span class="pnum">Part Four of Four</span>
   <span class="pname">CHARYA KHANDA</span>
   <p class="pdesc">Conduct: rituals, rites of passage, the monthly meeting, community principles, conflict resolution, safeguards against corruption, and appendices.</p>
 </div>
-
-<h1 class="part-h" id="charya-intro">CHARYA KHANDA</h1>
 
 <h2 id="monthly-meeting">4.1 The Monthly Meeting and Ritual Structure</h2>
 <h2 id="monthly-meeting">The Monthly Meeting: Detailed Format</h2>
@@ -2459,8 +2434,8 @@ operating at the level of one's fundamental relationship to experience itself.</
 <p><strong>Respect for all genuine paths.</strong> Hereditary Hindu communities and all sincere spiritual traditions are never disparaged. This circle is a home for those who have none, not a competitor to those who already have one.</p>
 
 <h2 id="smriti-acara">4.4 Conduct in Detail</h2>
-<div class="smriti-note">The following from the Garjanaa Smriti's Book Four provides the complete detailed treatment of community life, Niti (wisdom of worldly conduct), marriage, the ten rites of passage, conflict resolution, checks and balances, and the antidotes to the demonic tendencies.</div>
-<h1>BOOK FOUR, ĀCĀRA KHAṆḌA</h1>
+<div class="doc-smriti-note">The following from the Garjanaa Smriti's Book Four provides the complete detailed treatment of community life, Niti (wisdom of worldly conduct), marriage, the ten rites of passage, conflict resolution, checks and balances, and the antidotes to the demonic tendencies.</div>
+<h2>BOOK FOUR, ĀCĀRA KHAṆḌA</h2>
 <h3>The Part on Conduct</h3>
 <h2>4.1 The Spirit of Community Life</h2>
 <p>This code is not a rulebook imposed from above. It is a shared agreement, reflecting the knowledge of Book One, the union described in Book Two, and the practices of Book Three, put into the form of actual daily life together. It exists to help members walk the path with honesty, kindness, and clarity, to protect the vulnerable, hold the community accountable to its own stated ideals, and keep it a genuine Satsaṅga rather than drifting, as intense communities often do, into a sect or a personality cult. When members fall short, this code is meant to guide them back without shame, in the spirit of ongoing self-study (Svādhyāya, §3.7).</p>
@@ -2792,7 +2767,7 @@ operating at the level of one's fundamental relationship to experience itself.</
 <p><strong>Personal.</strong> Cultivate fearlessness (<em>Abhayam</em>, the recognition that the Ātman cannot be harmed by any external verdict, not the absence of fear but the refusal to let fear determine choices); steadiness under praise or blame (pausing before responding, declining to accept an attacker's frame, recommitting to daily practice as an anchor); compassion without appeasement (holding "this person is suffering; may they find peace; I need neither convince them nor submit to them", firm and kind, like a tree that bends in wind but stays rooted); and the willingness to use silence (<em>mauna</em>) rather than argue with someone determined to misunderstand, not as cowardice but as the wisdom of conserving energy for practice and genuine Satsaṅga. Reach out to community rather than facing pressure alone, isolation is where such pressure does its worst damage, and Satsaṅga is its most direct antidote.</p>
 <h2><strong>Social.</strong> Never retaliate or mirror an attacker's methods, the moment this community begins to mirror propaganda, demonization, or calls for loyalty against a common enemy, it has become what it stands against. Correct misinformation with calm, factual, non-escalating statements, and let truth stand on its own rather than chasing every falsehood. Protect vulnerable members facing family or social pressure without ever encouraging severed family ties unless those ties are genuinely abusive. Maintain boundaries at gatherings calmly and privately, disruptive individuals are asked to respect the space, and asked to leave if they do not, without public shaming. Pursue legal recourse only as a last resort, for genuine legal harm, undertaken soberly and with full community consultation. And take the long view: this path does not need to win every exchange, only to keep sincere practice alive. Those drawn to it will find it; those who attack it will pass. The tree does not uproot itself because the wind blows.</h2>
 <hr />
-<h1>CLOSING</h1>
+<h2>CLOSING</h2>
 <h2>5.1 On Adapting This Smriti</h2>
 <p>Amendments to this Smriti may be proposed by any Serious Practitioner and are discussed openly at gatherings; changes are adopted by broad consensus, never unilateral decree. This document is a living one, meant to be revised as the community learns.</p>
 <h2>5.2 On Holding It Lightly</h2>
@@ -3014,17 +2989,10 @@ May this synthesis serve as a faithful, accessible doorway into their far deeper
 </div>
 
 <footer>
-  <div class="ft-lamp" aria-hidden="true"></div>
-  <div class="ft-mark">Garjanaa</div>
-  <div class="ft-deva" aria-hidden="true">&#2327;&#2352;&#2381;&#2332;&#2344;&#2366;</div>
-  <div class="ft-tag">A Roaring Call to Live the Eternal Dharma of Truth</div>
-  <nav class="ft-nav">
-    <a href="index.html">Home</a>
-    <a href="philosophy.html">Philosophy</a>
-    <a href="practices.html">Practices</a>
-    <a href="texts.html">Texts</a>
-    <a href="community.html">Community</a>
-  </nav>
+  <div class="footer-title">GARJANAA</div>
+  <p>Come with your questions, your love, your critical mind, your tired heart. The circle is ever forming.</p>
+  <a href="index.html" class="footer-cta">Return Home</a>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
