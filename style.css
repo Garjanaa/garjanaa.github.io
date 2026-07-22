@@ -9,6 +9,9 @@
   --ember-glow: #f0c060;
   --mist: #f5f0e8;
   --stone: #8a8278;
+  --stone-dim: #5f594e;
+  --card: rgba(45,45,45,0.6);
+  --card-border: rgba(196,92,38,0.15);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -310,7 +313,7 @@ section {
   border: 1px solid rgba(196,92,38,0.1); border-radius: 4px;
   padding: 1.5rem;
 }
-.khanda-card h5 {
+.khanda-card h3 {
   font-family: 'Cinzel', serif; font-size: 1rem;
   color: var(--ember-glow); margin-bottom: 0.5rem;
 }
@@ -328,7 +331,7 @@ section {
   border: 1px solid rgba(196,92,38,0.1); border-radius: 4px;
   padding: 2.5rem; margin-bottom: 2rem;
 }
-.guru-story h4 {
+.guru-story h2 {
   font-family: 'Cinzel', serif; font-size: 1.1rem;
   color: var(--ember-glow); margin-bottom: 1rem;
 }
@@ -362,7 +365,7 @@ section {
   background: rgba(45,45,45,0.7);
   transform: translateY(-3px);
 }
-.guru-item h4 {
+.guru-item h2 {
   font-family: 'Cinzel', serif; font-size: 1.1rem;
   color: var(--ember-glow); margin-bottom: 0.5rem; padding-right: 2rem;
 }
@@ -398,7 +401,7 @@ section {
   background: radial-gradient(circle, rgba(196,92,38,0.05) 0%, transparent 70%);
   pointer-events: none;
 }
-.chakra-card h3 {
+.chakra-card h2 {
   font-family: 'Cinzel', serif; font-size: 1.8rem;
   color: var(--ember-glow); margin-bottom: 0.5rem;
 }
@@ -427,7 +430,7 @@ section {
   border: 1px solid rgba(196,92,38,0.1); border-radius: 4px;
   padding: 2.5rem; margin-bottom: 2rem; position: relative;
 }
-.parable h4 {
+.parable h2 {
   font-family: 'Cinzel', serif; font-size: 1.3rem;
   color: var(--ember-glow); margin-bottom: 0.3rem;
 }
@@ -447,11 +450,11 @@ section {
 /* ===== PHILOSOPHY ===== */
 .philosophy-section { background: var(--ash); }
 .philosophy-content { max-width: 800px; margin: 0 auto; }
-.philosophy-content h3 {
+.philosophy-content h2 {
   font-family: 'Cinzel', serif; font-size: 1.6rem;
   color: var(--ember-glow); margin: 3rem 0 1rem;
 }
-.philosophy-content h4 {
+.philosophy-content h3 {
   font-family: 'Cinzel', serif; font-size: 1.2rem;
   color: var(--mist); margin: 2rem 0 0.8rem;
 }
@@ -479,7 +482,7 @@ section {
   background: rgba(45,45,45,0.7);
 }
 .devata-card .devata-symbol { font-size: 2rem; margin-bottom: 0.5rem; }
-.devata-card h5 {
+.devata-card h3 {
   font-family: 'Cinzel', serif; font-size: 1rem;
   color: var(--ember-glow); margin-bottom: 0.3rem;
 }
@@ -499,11 +502,11 @@ section {
   border: 1px solid rgba(196,92,38,0.1); border-radius: 4px;
   padding: 2.5rem; margin-bottom: 2.5rem;
 }
-.practice-stream h3 {
+.practice-stream h2 {
   font-family: 'Cinzel', serif; font-size: 1.5rem;
   color: var(--ember-glow); margin-bottom: 1rem;
 }
-.practice-stream h4 {
+.practice-stream h3 {
   font-family: 'Cinzel', serif; font-size: 1.1rem;
   color: var(--mist); margin: 1.5rem 0 0.8rem;
 }
@@ -520,11 +523,11 @@ section {
 /* ===== COMMUNITY ===== */
 .community-section { background: var(--ash); }
 .community-content { max-width: 800px; margin: 0 auto; }
-.community-content h3 {
+.community-content h2 {
   font-family: 'Cinzel', serif; font-size: 1.5rem;
   color: var(--ember-glow); margin: 2.5rem 0 1rem;
 }
-.community-content h4 {
+.community-content h3 {
   font-family: 'Cinzel', serif; font-size: 1.1rem;
   color: var(--mist); margin: 1.5rem 0 0.8rem;
 }
@@ -539,7 +542,7 @@ section {
   border: 1px solid rgba(196,92,38,0.08); border-radius: 4px;
   padding: 1.5rem;
 }
-.principle-card h5 {
+.principle-card h3 {
   font-family: 'Cinzel', serif; font-size: 1rem;
   color: var(--ember-glow); margin-bottom: 0.5rem;
 }
@@ -550,7 +553,7 @@ section {
   border-left: 3px solid var(--fire); border-radius: 0 4px 4px 0;
   padding: 1.5rem 2rem;
 }
-.level-card h5 {
+.level-card h3 {
   font-family: 'Cinzel', serif; font-size: 1.1rem;
   color: var(--ember-glow); margin-bottom: 0.5rem;
 }
@@ -596,9 +599,158 @@ footer .footer-cta:hover {
   box-shadow: 0 0 20px rgba(196,92,38,0.2);
 }
 
+/* ===== SCROLL ANIMATIONS ===== */
+.fade-in {
+  opacity: 0; transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* What Is Garjanaa Section */
+.what-is {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.what-is-content p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--stone);
+  margin-bottom: 1.5rem;
+}
+.what-is-content strong { color: var(--mist); }
+
+/* Ritual Content Styling */
+.ritual-content { max-width: 800px; margin: 0 auto; padding: 0 2rem; }
+.ritual-verse {
+  border-left: 3px solid var(--fire);
+  padding-left: 1.5rem; margin: 2rem 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.15rem; line-height: 1.9;
+  color: var(--stone); font-style: italic;
+}
+.ritual-verse p { margin-bottom: 1rem; }
+.ritual-content h3 {
+  font-family: 'Cinzel', serif; font-size: 1.4rem;
+  color: var(--mist); margin-top: 3rem; margin-bottom: 1rem;
+  text-align: center;
+}
+.ritual-source {
+  text-align: center; font-family: 'Inter', sans-serif;
+  font-size: 0.9rem; color: var(--stone-dim);
+  margin-top: 3rem; text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+/* Hero Slogan - Baddhoham vimuktah syam */
+.hero-slogan {
+  margin: 2rem 0; padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(240,192,96,0.25);
+  border-bottom: 1px solid rgba(240,192,96,0.25);
+  text-align: center; max-width: 700px;
+  margin-left: auto; margin-right: auto;
+}
+.slogan-deva {
+  font-family: 'Cinzel', serif; font-size: 2.2rem; font-weight: 700;
+  color: var(--fire); letter-spacing: 0.08em;
+  margin-bottom: 0.4rem; line-height: 1.3;
+}
+.slogan-meaning {
+  font-family: 'EB Garamond', serif; font-size: 1.3rem; font-style: italic;
+  color: var(--mist); margin-bottom: 0.3rem; letter-spacing: 0.02em;
+}
+
+/* ===== MOBILE NAV TOGGLE ===== */
+.nav-toggle {
+  display: none;
+  width: 32px; height: 24px;
+  position: relative;
+  background: none; border: none; cursor: pointer;
+  padding: 0; z-index: 1100;
+}
+.nav-toggle span,
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: ''; position: absolute; left: 0;
+  width: 100%; height: 2px;
+  background: var(--ember-glow);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-toggle span { top: 11px; }
+.nav-toggle span::before { top: -8px; }
+.nav-toggle span::after { top: 8px; }
+.nav-toggle[aria-expanded="true"] span { background: transparent; }
+.nav-toggle[aria-expanded="true"] span::before { transform: translateY(8px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span::after { transform: translateY(-8px) rotate(-45deg); }
+
+/* ===== NAV DROPDOWN (Library) ===== */
+.nav-dropdown { position: relative; }
+.nav-dropdown > .dropdown-trigger {
+  background: none; border: none; cursor: pointer;
+  color: var(--stone); font-family: 'Inter', sans-serif;
+  font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 0.3rem;
+  transition: color 0.3s ease;
+}
+.nav-dropdown > .dropdown-trigger::after {
+  content: '▾'; font-size: 0.7em; line-height: 1;
+}
+.nav-dropdown:hover > .dropdown-trigger,
+.nav-dropdown.open > .dropdown-trigger { color: var(--ember-glow); }
+.dropdown-menu {
+  list-style: none;
+  position: absolute; top: 100%; right: 0;
+  background: rgba(20,20,20,0.98);
+  border: 1px solid rgba(196,92,38,0.2); border-radius: 4px;
+  min-width: 220px; padding: 0.5rem 0;
+  margin-top: 0.75rem;
+  opacity: 0; visibility: hidden; transform: translateY(-8px);
+  transition: all 0.25s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown.open .dropdown-menu {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+.dropdown-menu li a {
+  display: block; padding: 0.65rem 1.25rem;
+  font-size: 0.8rem; letter-spacing: 0.05em; text-transform: none;
+  color: var(--stone); white-space: nowrap;
+}
+.dropdown-menu li a:hover { color: var(--ember-glow); background: rgba(196,92,38,0.08); }
+.dropdown-menu li a::after { display: none; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-  .nav-links { display: none; }
+  .nav-toggle { display: block; }
+  .nav-links {
+    position: fixed; top: 0; right: 0;
+    height: 100vh; width: min(78vw, 320px);
+    background: rgba(13,13,13,0.98);
+    border-left: 1px solid rgba(196,92,38,0.15);
+    flex-direction: column; align-items: flex-start;
+    gap: 0; padding: 6rem 2rem 2rem;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+    overflow-y: auto;
+  }
+  .nav-links.open { transform: translateX(0); }
+  .nav-links li { width: 100%; }
+  .nav-links a { display: block; padding: 0.9rem 0; width: 100%; }
+  .nav-dropdown > .dropdown-trigger { width: 100%; padding: 0.9rem 0; justify-content: space-between; }
+  .dropdown-menu {
+    position: static; opacity: 1; visibility: visible; transform: none;
+    display: none; background: none; border: none; box-shadow: none;
+    margin: 0 0 0.5rem; padding: 0 0 0 1rem;
+  }
+  .nav-dropdown.open .dropdown-menu { display: block; }
+  .dropdown-menu li a { padding: 0.7rem 0; }
+  .nav-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5); z-index: 1050;
+  }
+  .nav-overlay.open { display: block; }
+
   .chakra-container { grid-template-columns: 1fr; }
   .gurus-grid { grid-template-columns: 1fr; }
   .devata-grid { grid-template-columns: 1fr; }
@@ -606,163 +758,227 @@ footer .footer-cta:hover {
   section { padding: 4rem 1.5rem; }
 }
 
-/* ===== SCROLL ANIMATIONS ===== */
-.fade-in {
-  opacity: 0; transform: translateY(30px);
-  transition: all 0.8s ease;
+/* =====================================================================
+   LIBRARY / LONG-FORM DOCUMENT PAGES
+   Shared dark-theme styling for advait.html, garjanaa-document.html,
+   ladder.html — replaces the old per-page inline <style> blocks that
+   used undefined variables (--gold, --cream, --deep) and a mismatched
+   light "parchment" theme inconsistent with the rest of the site.
+   ===================================================================== */
+.doc-hero {
+  background: linear-gradient(180deg, #0d0d0d 0%, #1a0f0a 50%, #241611 100%);
+  color: var(--mist); padding: 6rem 2rem 3.5rem; text-align: center;
 }
-.fade-in.visible { opacity: 1; transform: translateY(0); }
-/* What Is Garjanaa Section */
-.what-is {
-  padding: 6rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+.doc-hero .eyebrow {
+  font-family: 'Inter', sans-serif; font-size: 0.78rem;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--fire); display: block; margin-bottom: 1rem;
 }
-
-.what-is-content p {
-  font-family: 'EB Garamond', serif;
-  font-size: 1.25rem;
-  line-height: 1.8;
-  color: var(--stone);
-  margin-bottom: 1.5rem;
-}
-
-.what-is-content strong {
-  color: var(--cream);
-}
-
-/* Ritual Content Styling */
-.ritual-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.ritual-verse {
-  border-left: 3px solid var(--flame);
-  padding-left: 1.5rem;
-  margin: 2rem 0;
-  font-family: 'EB Garamond', serif;
-  font-size: 1.15rem;
-  line-height: 1.9;
-  color: var(--stone);
-  font-style: italic;
-}
-
-.ritual-verse p {
-  margin-bottom: 1rem;
-}
-
-.ritual-content h3 {
+.doc-hero h1 {
   font-family: 'Cinzel', serif;
-  font-size: 1.4rem;
-  color: var(--cream);
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  text-align: center;
+  font-size: clamp(2.4rem, 7vw, 4.5rem); font-weight: 700;
+  color: var(--mist); letter-spacing: 0.08em; margin-bottom: 0.8rem;
+  text-shadow: 0 0 40px rgba(196,92,38,0.35);
 }
+.doc-hero h1 em { color: var(--ember-glow); font-style: italic; }
+.doc-hero .doc-sub {
+  font-family: 'EB Garamond', serif; font-size: 1.05rem; font-style: italic;
+  color: var(--stone); max-width: 640px; margin: 0.8rem auto 0; line-height: 1.7;
+}
+.doc-note {
+  background: rgba(196,92,38,0.06); border-left: 3px solid var(--fire);
+  padding: 0.9rem 1.4rem; margin-bottom: 2rem;
+  font-size: 0.9rem; color: var(--stone); font-style: italic;
+}
+.doc-note a { color: var(--ember-glow); }
 
-.ritual-source {
-  text-align: center;
+.doc-toc {
+  background: var(--smoke); border-top: 2px solid rgba(196,92,38,0.25);
+  border-bottom: 1px solid rgba(196,92,38,0.1); padding: 2.5rem 2rem;
+}
+.doc-toc-inner {
+  max-width: 900px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.8rem;
+}
+.doc-toc-part h3 {
+  font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--ember-glow);
+  margin-bottom: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+}
+.doc-toc-part ul { list-style: none; }
+.doc-toc-part li { margin-bottom: 0.3rem; }
+.doc-toc-part a {
+  font-family: 'Inter', sans-serif; font-size: 0.82rem;
+  color: var(--stone); text-decoration: none;
+  border-bottom: 1px dotted rgba(196,92,38,0.3);
+}
+.doc-toc-part a:hover { color: var(--ember-glow); }
+
+.doc-body { max-width: 800px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+.part-heading {
+  background: rgba(196,92,38,0.08); padding: 1.5rem 2rem;
+  margin: 4rem -2rem 0; border-left: 4px solid var(--fire);
+}
+.part-heading h2 {
+  font-family: 'Cinzel', serif; font-size: 1.3rem; color: var(--ember-glow);
+  margin: 0; border-bottom: none; padding-bottom: 0;
+  text-transform: uppercase; letter-spacing: 0.15em;
+}
+@media (max-width: 768px) { .part-heading { margin: 3rem -1.2rem 0; } }
+.doc-body h2 {
+  font-family: 'Cinzel', serif; font-size: 1.8rem; color: var(--mist);
+  margin: 3.2rem 0 0.8rem; padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(196,92,38,0.2);
+}
+.doc-body h3 {
+  font-family: 'Cinzel', serif; font-size: 1.3rem; color: var(--ember-glow);
+  margin: 2.2rem 0 0.6rem;
+}
+.doc-body h4 {
+  font-family: 'Cinzel', serif; font-size: 1.02rem; color: var(--mist);
+  margin: 1.6rem 0 0.4rem; text-transform: uppercase; letter-spacing: 0.05em;
+}
+.doc-body p { margin-bottom: 1.3rem; color: var(--stone); line-height: 1.8; font-size: 1rem; }
+.doc-body ul, .doc-body ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--stone); }
+.doc-body li { margin-bottom: 0.45rem; line-height: 1.65; }
+.doc-body blockquote {
+  margin: 1.5rem 0 1.5rem 1rem; padding: 1rem 1.5rem;
+  border-left: 3px solid var(--fire); background: rgba(196,92,38,0.05);
+  font-style: italic; color: var(--mist);
+}
+.doc-body hr { border: none; border-top: 1px solid rgba(196,92,38,0.2); margin: 2.5rem 0; }
+.doc-body strong { color: var(--mist); }
+.doc-body em { color: var(--ember-glow); font-style: italic; }
+.doc-body code { font-family: 'EB Garamond', serif; font-style: italic; color: var(--ember-glow); background: none; }
+.doc-body table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+.doc-body th {
+  background: rgba(196,92,38,0.08); padding: 0.6rem 0.8rem; text-align: left;
+  border-bottom: 2px solid rgba(196,92,38,0.3);
+  font-family: 'Cinzel', serif; font-size: 0.95rem; color: var(--mist);
+}
+.doc-body td { padding: 0.55rem 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.06); vertical-align: top; color: var(--stone); }
+
+.doc-part-banner {
+  background: linear-gradient(180deg, #0d0d0d 0%, #1a0f0a 100%);
+  color: var(--ember-glow); padding: 4rem 2rem 3rem;
+  margin: 5rem -2rem 0; text-align: center; position: relative;
+}
+.doc-part-banner::after {
+  content: ''; display: block; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--fire), transparent);
+  margin-top: 3rem;
+}
+.doc-part-banner .pnum {
+  font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--fire); display: block; margin-bottom: 0.6rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  color: var(--stone-dim);
-  margin-top: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+}
+.doc-part-banner .pname {
+  font-family: 'Cinzel', serif; font-size: clamp(1.8rem, 5vw, 3rem);
+  letter-spacing: 0.05em; display: block; margin-bottom: 0.5rem;
+}
+.doc-part-banner .pdesc {
+  font-size: 0.95rem; color: var(--stone); font-style: italic;
+  max-width: 520px; margin: 0.6rem auto 0; line-height: 1.65;
+}
+.doc-smriti-note {
+  background: rgba(196,92,38,0.05); border-left: 3px solid var(--fire);
+  padding: 1rem 1.5rem; margin: 2rem 0; font-size: 0.9rem;
+  color: var(--stone); font-style: italic;
 }
 
-/* Ensure links don't force new tab behavior */
-a {
-  target: none;
+.doc-legend {
+  background: var(--smoke); border-top: 2px solid rgba(196,92,38,0.25);
+  padding: 2rem 2rem 1.5rem;
 }
-/* Hero Slogan - Baddhoham vimuktah syam */
-.hero-slogan {
-  margin: 2rem 0;
-  padding: 1.5rem 2rem;
-  border-top: 1px solid rgba(212, 175, 55, 0.25);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
-  text-align: center;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.doc-legend-inner {
+  max-width: 860px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+.doc-legend .leg-k {
+  font-family: 'Cinzel', serif; font-size: 1.05rem; color: var(--mist);
+  display: flex; align-items: baseline; gap: 0.4rem;
+}
+.doc-legend .leg-k .skt {
+  font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--fire);
+}
+.doc-legend .leg-d { font-size: 0.82rem; color: var(--stone); line-height: 1.5; margin-top: 0.2rem; }
+.doc-legend-note { max-width: 860px; margin: 0.8rem auto 0; font-size: 0.82rem; color: var(--stone-dim); font-style: italic; text-align: center; }
+
+.back-link {
+  display: inline-block; margin-bottom: 3rem;
+  font-family: 'Inter', sans-serif; font-size: 0.8rem;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--fire); border-bottom: 1px dotted rgba(196,92,38,0.4);
+}
+.back-link:hover { color: var(--ember-glow); }
+
+@media (max-width: 768px) {
+  .doc-body { padding: 2rem 1.2rem; }
+  .doc-toc-inner { grid-template-columns: 1fr 1fr; }
+  .doc-part-banner { margin: 4rem -1.2rem 0; }
+}
+@media (max-width: 480px) {
+  .doc-toc-inner { grid-template-columns: 1fr; }
 }
 
-.slogan-deva {
-  font-family: 'Cinzel', serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--flame);
-  letter-spacing: 0.08em;
-  margin-bottom: 0.4rem;
-  line-height: 1.3;
+/* =====================================================================
+   THE LADDER — rung/progress-bar components.
+   These classes existed in ladder.html with NO matching CSS anywhere
+   in the site (neither style.css nor the page's own inline block), so
+   the page's central visual metaphor rendered as unstyled plain text.
+   ===================================================================== */
+.doc-rungs { background: var(--ash); padding: 1rem 2rem 5rem; }
+.ladder-rail-wrap {
+  max-width: 780px; margin: 0 auto; position: relative;
+  padding-left: 2.5rem; border-left: 2px solid rgba(196,92,38,0.2);
 }
-
-.slogan-meaning {
-  font-family: 'EB Garamond', serif;
-  font-size: 1.3rem;
-  font-style: italic;
-  color: var(--cream);
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.02em;
+.rung { position: relative; margin-bottom: 3rem; }
+.rung-disc {
+  position: absolute; left: -3.45rem; top: 0;
+  width: 2.6rem; height: 2.6rem; border-radius: 50%;
+  background: var(--ash); border: 2px solid var(--fire);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Cinzel', serif; font-weight: 700; color: var(--ember-glow);
 }
-
-/* What Is Garjanaa Section */
-.what-is {
-  padding: 6rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+.rung-card {
+  background: linear-gradient(145deg, rgba(45,45,45,0.6), rgba(25,25,25,0.85));
+  border: 1px solid rgba(196,92,38,0.12); border-radius: 6px;
+  padding: 2rem 2.2rem;
 }
-
-.what-is-content p {
-  font-family: 'EB Garamond', serif;
-  font-size: 1.25rem;
-  line-height: 1.8;
-  color: var(--stone);
-  margin-bottom: 1.5rem;
+.rung-head { margin-bottom: 1.5rem; }
+.rung-names { display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; }
+.rung-names .rung-skt {
+  font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--mist);
+  margin: 0; border: none; padding: 0;
 }
-
-.what-is-content strong {
-  color: var(--cream);
+.rung-eng {
+  font-family: 'Inter', sans-serif; font-size: 0.8rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--fire);
 }
-
-/* Ritual Content Styling */
-.ritual-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 2rem;
+.rung-entry { color: var(--stone); font-style: italic; margin-top: 0.6rem; font-size: 0.95rem; }
+.rung-cols {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem; margin-bottom: 1.75rem;
 }
-
-.ritual-verse {
-  border-left: 3px solid var(--flame);
-  padding-left: 1.5rem;
-  margin: 2rem 0;
-  font-family: 'EB Garamond', serif;
-  font-size: 1.15rem;
-  line-height: 1.9;
-  color: var(--stone);
-  font-style: italic;
+.rung-section h3 {
+  font-family: 'Cinzel', serif; font-size: 0.9rem; color: var(--ember-glow);
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;
 }
-
-.ritual-verse p {
-  margin-bottom: 1rem;
+.rung-section p { color: var(--stone); font-size: 0.88rem; line-height: 1.6; }
+.rung-bars { border-top: 1px solid rgba(196,92,38,0.1); padding-top: 1.25rem; }
+.bar-row { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.6rem; }
+.bar-label {
+  width: 3.5rem; flex-shrink: 0;
+  font-family: 'Inter', sans-serif; font-size: 0.75rem;
+  letter-spacing: 0.05em; color: var(--stone);
 }
-
-.ritual-content h3 {
-  font-family: 'Cinzel', serif;
-  font-size: 1.4rem;
-  color: var(--cream);
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.ritual-source {
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  color: var(--stone-dim);
-  margin-top: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.bar-track { flex: 1; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.06); overflow: hidden; }
+.bar-fill { height: 100%; background: linear-gradient(90deg, var(--fire), var(--ember-glow)); border-radius: 3px; }
+.bar-note { flex-shrink: 0; font-size: 0.78rem; color: var(--stone-dim); font-style: italic; max-width: 140px; }
+@media (max-width: 600px) {
+  .ladder-rail-wrap { padding-left: 2rem; }
+  .rung-disc { left: -2.85rem; width: 2.2rem; height: 2.2rem; font-size: 0.9rem; }
+  .bar-note { display: none; }
 }
