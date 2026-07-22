@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GARJANAA — A Roaring Call to Live the Eternal Dharma of Truth</title>
+<meta name="description" content="A community path grounded in Advaita Vedanta, Aanvikshiki inquiry, devotional practice through the Pancha-devata, and unconditional Seva.">
+<link rel="canonical" href="https://garjanaa.github.io/index.html">
+<meta property="og:title" content="GARJANAA — A Roaring Call to Live the Eternal Dharma of Truth">
+<meta property="og:description" content="A community path grounded in Advaita Vedanta, Aanvikshiki inquiry, devotional practice through the Pancha-devata, and unconditional Seva.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://garjanaa.github.io/index.html">
+<meta property="og:image" content="https://garjanaa.github.io/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,7 +22,8 @@
 <nav id="navbar">
 <div class="nav-inner">
 <a href="index.html" class="nav-logo">GARJANAA</a>
-<ul class="nav-links">
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+<ul class="nav-links" id="nav-links">
 <li><a href="index.html" class="current">Home</a></li>
 <li><a href="philosophy.html">Philosophy</a></li>
 <li><a href="practices.html">Practices</a></li>
@@ -22,9 +32,19 @@
 <li><a href="gurus.html">24 Gurus</a></li>
 <li><a href="chakras.html">Chakras</a></li>
 <li><a href="parables.html">Parables</a></li>
+<li class="nav-dropdown">
+<button class="dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">Library</button>
+<ul class="dropdown-menu">
+<li><a href="advait.html">Advaita Guide</a></li>
+<li><a href="garjanaa-document.html">Complete Document</a></li>
+<li><a href="ladder.html">The Ladder</a></li>
+<li><a href="codes-of-conduct.html">Code of Conduct</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </nav>
+<div class="nav-overlay"></div>
 
 <section class="hero">
 <div class="hero-flame"></div>
