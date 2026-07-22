@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parables & Teaching Stories — GARJANAA</title>
+<meta name="description" content="Parables and teaching stories illustrating the philosophy and practice of Garjanaa.">
+<link rel="canonical" href="https://garjanaa.github.io/parables.html">
+<meta property="og:title" content="Parables & Teaching Stories — GARJANAA">
+<meta property="og:description" content="Parables and teaching stories illustrating the philosophy and practice of Garjanaa.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://garjanaa.github.io/parables.html">
+<meta property="og:image" content="https://garjanaa.github.io/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,7 +22,8 @@
 <nav id="navbar">
 <div class="nav-inner">
 <a href="index.html" class="nav-logo">GARJANAA</a>
-<ul class="nav-links">
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+<ul class="nav-links" id="nav-links">
 <li><a href="index.html">Home</a></li>
 <li><a href="philosophy.html">Philosophy</a></li>
 <li><a href="practices.html">Practices</a></li>
@@ -22,20 +32,30 @@
 <li><a href="gurus.html">24 Gurus</a></li>
 <li><a href="chakras.html">Chakras</a></li>
 <li><a href="parables.html" class="current">Parables</a></li>
+<li class="nav-dropdown">
+<button class="dropdown-trigger" type="button" aria-haspopup="true" aria-expanded="false">Library</button>
+<ul class="dropdown-menu">
+<li><a href="advait.html">Advaita Guide</a></li>
+<li><a href="garjanaa-document.html">Complete Document</a></li>
+<li><a href="ladder.html">The Ladder</a></li>
+<li><a href="codes-of-conduct.html">Code of Conduct</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </nav>
+<div class="nav-overlay"></div>
 
 <section class="parables-section" style="padding-top: 8rem;">
 <div class="section-header fade-in">
 <p class="section-label">Stories That Teach</p>
-<h2 class="section-title">Parables &amp; <em>Teaching Stories</em></h2>
+<h1 class="section-title">Parables &amp; <em>Teaching Stories</em></h1>
 <div class="section-divider"></div>
 <p class="section-subtitle">The tradition does not merely argue — it tells stories. These parables carry truths that logic alone cannot convey. They are not entertainment; they are instruction disguised as narrative, waiting for the ready mind.</p>
 </div>
 
 <div class="parable fade-in">
-<h4>The Rope and the Snake</h4>
+<h2>The Rope and the Snake</h2>
 <p class="source">From the tradition of Adi Shankaracharya</p>
 <p>A man walks down a village road at dusk. In the half-light, he sees a coiled snake in his path and freezes in terror. His heart pounds, his palms sweat, his mind races with images of venom and death. He cannot move forward, cannot retreat — paralyzed by fear.</p>
 <p>A friend approaches with a lantern. As the light falls upon the "snake," it is revealed to be nothing but a coiled rope, left by a villager. The man laughs — but his laughter is mixed with tears. The fear was real. The suffering was real. The snake was never there.</p>
@@ -43,7 +63,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The Salt Doll and the Ocean</h4>
+<h2>The Salt Doll and the Ocean</h2>
 <p class="source">From the Upanishadic tradition</p>
 <p>A salt doll wished to measure the depth of the ocean. It walked to the shore, stepped into the water, and kept walking. With each step, it dissolved a little more. Deeper and deeper it went, until there was no doll left — only the ocean, tasting of salt.</p>
 <p>The doll did not return with a measurement. It did not return at all. But in its dissolution, it became what it had been seeking to measure. The seeker became the sought.</p>
@@ -51,7 +71,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The Ten Fools and the Missing Man</h4>
+<h2>The Ten Fools and the Missing Man</h2>
 <p class="source">From the tradition of the Ten Fools (Dasagranthi)</p>
 <p>Ten fools crossed a river. On the far bank, one of them began to count: "One, two, three..." He counted only nine. Panic spread through the group. "One of us has drowned!" they cried. They wept, beat their breasts, and prepared to perform the last rites for their lost companion.</p>
 <p>A passing traveler saw their distress and asked what was wrong. Hearing their tale, he smiled and said, "You are the tenth." Each fool, in counting the others, had forgotten to count himself. The "missing" man was the one doing the counting.</p>
@@ -59,7 +79,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The King and the Dream</h4>
+<h2>The King and the Dream</h2>
 <p class="source">From the Yoga Vasishtha</p>
 <p>A mighty king fell asleep and dreamed he was a beggar. In the dream, he suffered terribly — hunger, cold, humiliation, the scorn of passersby. He wept and prayed for relief from his miserable condition. The dream was vivid, detailed, and utterly convincing.</p>
 <p>When he woke, he found himself in his palace, surrounded by luxury. The beggar's suffering vanished instantly — not because it was cured, but because it was never real. The king had never been a beggar; the beggar was a projection upon the sleeping king.</p>
@@ -67,7 +87,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The Potter and the Clay</h4>
+<h2>The Potter and the Clay</h2>
 <p class="source">From the Chandogya Upanishad</p>
 <p>A potter takes clay and shapes it into a pot. The pot has a name, a form, a function — it holds water, it sits on a shelf, it is bought and sold. But when the pot is broken, what remains? Only clay. The pot was never other than clay; the name and form were superimpositions upon the clay.</p>
 <p>The potter makes many pots — round ones, tall ones, decorated ones, plain ones. Each has its own name and use. But break them all, and there is only clay. The diversity was apparent; the unity was real.</p>
@@ -75,7 +95,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The Musket and the Mirror</h4>
+<h2>The Musket and the Mirror</h2>
 <p class="source">From the tradition of self-inquiry</p>
 <p>A man held a musket and looked into a mirror. He saw a man with a musket pointed at him and fired in terror. The mirror shattered, and the man fell dead — killed by his own reflection.</p>
 <p>The Self is the mirror; the ego is the reflection. The ego sees danger in the Self, attacks the Self, and in doing so, destroys itself. The Self remains untouched, unshattered, ever-pure. The ego was never other than the Self — a reflection that mistook itself for the original.</p>
@@ -83,7 +103,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The Two Birds in the Tree</h4>
+<h2>The Two Birds in the Tree</h2>
 <p class="source">From the Mundaka Upanishad (3.1.1)</p>
 <p>Two birds, inseparable companions, perch on the same tree. One bird eats the sweet and bitter fruits of the tree — experiencing pleasure and pain, success and failure, hope and despair. The other bird looks on, eating nothing, simply witnessing.</p>
 <p>The eating bird is the individual self (jiva), bound by karma, tossed by experience. The witnessing bird is the Supreme Self (Paramatman), ever-free, ever-peaceful, ever-blissful. They are not two birds, but one — the Self playing both roles through the power of maya.</p>
@@ -91,7 +111,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The Blind Men and the Elephant</h4>
+<h2>The Blind Men and the Elephant</h2>
 <p class="source">From the Udana (Buddhist tradition, shared wisdom)</p>
 <p>Six blind men were brought to an elephant. One touched the leg and said, "An elephant is like a pillar." Another touched the tail and said, "An elephant is like a rope." Another touched the ear and said, "An elephant is like a fan." Another touched the belly and said, "An elephant is like a wall." Another touched the tusk and said, "An elephant is like a spear." Another touched the trunk and said, "An elephant is like a snake."</p>
 <p>They argued fiercely, each convinced that his partial experience was the whole truth. A sighted man passing by laughed and said, "You are all right, and you are all wrong. The elephant is all of these things and none of them."</p>
@@ -99,7 +119,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The Thief Who Became a Sage</h4>
+<h2>The Thief Who Became a Sage</h2>
 <p class="source">From the life of Sage Valmiki</p>
 <p>Ratnakara was a highway robber who lived by stealing from travelers. One day, he attempted to rob the seven sages (Saptarishis) who were passing through the forest. Instead of fighting him, they asked a simple question: "Do your family members — your wife, your children, your parents — share in the sin of your robberies?"</p>
 <p>Ratnakara was certain they did. He went home and asked each one. To his shock, they all refused: "Your actions are your own. We did not tell you to steal. We will not share your sin." Crushed by this revelation, Ratnakara returned to the sages and begged for a way out. They gave him the mantra "Mara" (death) to repeat.</p>
@@ -108,7 +128,7 @@
 </div>
 
 <div class="parable fade-in">
-<h4>The Man Who Searched for His Head</h4>
+<h2>The Man Who Searched for His Head</h2>
 <p class="source">From the tradition of self-inquiry</p>
 <p>A man woke in the morning and began searching frantically for his head. "Where is my head?" he cried. "I cannot find it anywhere!" He searched under the bed, in the closet, behind the door. His family tried to help, but they could not find his head either.</p>
 <p>A wise neighbor passed by and asked what the commotion was about. Hearing the tale, he laughed and said, "Your head is where it has always been — on your shoulders. You are using it to search for it."</p>
