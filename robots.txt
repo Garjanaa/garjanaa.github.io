@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://garjanaa.github.io/sitemap.xml
